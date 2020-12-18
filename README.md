@@ -51,28 +51,28 @@ The text summarization approach we will consider here will be extraction-based.
 
 # Dataset Description 
 The dataset we are using here for this problem is a CSV file that contains four different sources attributes defined as follows :
-1)article id
-2)article title
-3)article text
-4)article source
+1) article id
+2) article title
+3) article text
+4) article source
 But the centre of attraction for our problem will be the third attribute i.e, article text.
 We will consider the article text from all rows and combine them all to summarize into one. 
 
 # Dataset Preprocessing 
-1.Import CSV data into pandas dataframe.
-2.Consider article text attribute and convert them all into a list of sentences. 
-3.Remove punctuations, numbers and special characters.
-4.Make alphabets lowercase.
-5.Get rid of the stopwords present in the sentences.
+1. Import CSV data into pandas dataframe.
+2. Consider article text attribute and convert them all into a list of sentences. 
+3. Remove punctuations, numbers and special characters.
+4. Make alphabets lowercase.
+5. Get rid of the stopwords present in the sentences.
 Finally, we will have a list of clean sentences to create vectors for sentences in our data with the help of the GloVe word vectors.
 
 # Implementation of the TextRank Algorithm
 Steps to follow after preprocessing phase:
-1.Representing sentences into vectors using the word embedding.
-2.Preparation of Similarity Matrix.
-3.Conversion of Similarity Matrix into graph/network to apply the PageRank Algorithm. 
-4.Applying the PageRank Algorithm.
-5.Extracting summary using top N sentences based on their rankings.
+1. Representing sentences into vectors using the word embedding.
+2. Preparation of Similarity Matrix.
+3. Conversion of Similarity Matrix into graph/network to apply the PageRank Algorithm. 
+4. Applying the PageRank Algorithm.
+5. Extracting summary using top N sentences based on their rankings.
 
 
 
